@@ -12,3 +12,12 @@ Consigli del giorno:
 - regola d'oro: riciclare ovunque possibile! Questo significa che per la parte di markup possiamo recuperare html e css dell'esercizio svolto qualche giorno fa: è già tutto pronto!
 - il riciclo spesso va a braccetto con le funzioni! Sapendole sfruttare bene, l'esercizio si riduce a poche righe ;)
 Buon lavoro e buon divertimento!
+
+
+
+
+##  SCALETTA
+1. Inserisco le immagini del carosello in modo dinamico
+2. Ricavo il currentIndex per collegare le immagini dei thumbsnails alle immagini del carosello
+3. Applico l'autoplay allo slider
+4. Aggiungo lo stop dell'autoplay all'hover del mouse
