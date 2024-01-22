@@ -6,7 +6,8 @@ const app = createApp({
     name: 'VueCarousel',
     data: () => ({
         destinations,
-        currentIndex: 0
+        currentIndex: 0,
+        autoplay: null
     }),
     computed: {
         lastElementIndex() {
@@ -32,12 +33,20 @@ const app = createApp({
             } else {
                 this.currentIndex = target;
             }
+        },
+
+        stopAutoplay() {
+            clearInterval(this.autoplay);
+        },
+
+        startAutoplay() {
+            this.autoplay = setInterval(() => {
+                this.setCurrentIndex('next');
+            }, 3000);
         }
     }, 
     mounted() {
-        setInterval(() => {
-            this.setCurrentIndex('next');
-        }, 3000);
+        this.startAutoplay();
     }
 });
 
