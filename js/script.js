@@ -33,6 +33,11 @@ const app = createApp({
                 this.currentIndex = target;
             }
         }
+    }, 
+    mounted() {
+        setInterval(() => {
+            this.setCurrentIndex('next');
+        }, 3000);
     }
 });
 
